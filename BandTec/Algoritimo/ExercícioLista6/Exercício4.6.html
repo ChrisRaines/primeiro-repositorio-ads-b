@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Qual time de paulista você torce?</h1>
+    <select id="time">
+        <option value="Escolha um time">Escolha</option>
+        <option value="Salve o alviverde imponente">Palmeiras</option>
+        <option value="Salve o Corinthians">Corinthians</option>
+        <option value="Salve o Tricolor paulista">São Paulo</option>
+        <option value="Agora que dá a bola é o Santos">Santos</option>
+    </select>
+
+    <button onclick="mostrar()">Fale sobre o time</button>
+    <br>
+    <div id="mens"></div>
+</body>
+</html>
+<script>
+    function mostrar () {
+        if (time.value == "Salve o alviverde imponente") {
+            mens.innerHTML = `${time.value}`;
+            mens.style = "color: white; background-color: green";
+
+        } else if (time.value == "Salve o Corinthians" ){
+            mens.innerHTML = `${time.value}`;
+            mens.style = "color: white; background-color: black";
+
+        } else if (time.value == "Salve o Tricolor paulista") {
+            mens.innerHTML = `${time.value}`;
+            mens.style = "color: red; background-color: black";
+
+        } else if (time.value == "Agora que dá a bola é o Santos") {
+            mens.innerHTML = `${time.value}`;
+            mens.style = "color: black; background-color: white";
+        }
+            }
+</script>

@@ -1,0 +1,24 @@
+create database...;
+use brasil;
+create table Estados_da_Região_Norte (
+id int primary key,
+estados varchar (50),
+siglas varchar (50),
+capitais varchar (50)
+);
+insert into estados_da_região_norte values 
+(1, 'Acre', 'AC', 'Rio Branco'),
+(2, 'Amapá', 'AP', 'Macapá'),
+(3, 'Amazonas', 'AM', 'Manaus'),
+(4, 'Pará', 'PA', 'Belém'),
+(5, 'Rondônia', 'RO', 'Porto Velho'),
+(6, 'Roraima', 'RR', 'Boa Vista'),
+(7, 'Tocantins', 'TO', 'Palmas');
+select * from estados_da_região_norte;
+select * from estados_da_região_norte ORDER BY siglas DESC;
+select estados from estados_da_região_norte;
+select * from estados_da_região_norte where estados like '%a';
+update estados_da_região_norte set estados = 'são paulo' where id = 1;
+delete from estados_da_região_norte where id = 1;
+drop table estados_da_região_norte;
+drop database brasil;

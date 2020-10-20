@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times</title>
+</head>
+<body>
+    <h3>Qual time grande de São Paulo você torce?</h3>
+   
+    <select id="time">
+        <option value="Escolha um time">- Escolha -</option>
+        <option value="Salve o Corinthians">Corinthians</option>
+        <option value="Salve o alviverde inponente">Palmeiras</option>
+        <option value="Agora quem da bola é o Santos">Santos</option>
+        <option value="Salve o Tricolor Paulista">São Paulo</option>
+    </select>
+        <button onclick="falar()">Fale sobre esse time</button>
+        <br><br>
+        <div id="mens"></div>
+
+</body>
+</html>
+
+    <script>
+        function falar() {
+              if (time.value == "Salve o Corinthians") {
+                  mens.innerHTML = `${time.value}`;
+                  mens.style = "color: white; background-color: black";
+             
+                } else if (time.value == "Salve o alviverde inponente") {
+                          mens.innerHTML = `${time.value}`;
+                          mens.style = "color: white; background-color: green";
+
+                } else if (time.value == "Agora quem da bola é o Santos") {
+                          mens.innerHTML = `${time.value}`;
+                          mens.style = "color: black; background-color: white";
+
+                        } else if (time.value == "Salve o Tricolor Paulista") {
+                          mens.innerHTML = `${time.value}`;
+                          mens.style = "color: red; background-color: black";
+        }       }
+
+    </script>
+    

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+</head>
+<body>
+    <h2 style="color: red">Cardapio da semana</h2>
+    <h3>descubra o prato do dia</h3>
+
+    <button onclick="segunda()">Segunda</button>
+    <button onclick="terça()">Terça</button>
+    <button onclick="quarta()">Quarta</button>
+    <button onclick="quinta()">Quinta</button>
+    <button onclick="sexta()">Sexta</button> 
+    <br><br>
+    
+    <div id="mensagem" style="color: blue">adivinha qual é o ptaro de hoje</div>
+    
+</body>
+</html>
+
+<script>
+    function segunda() {
+        mensagem.innerHTML += "<br>hoje é dia de <b> rabada </b>";
+    }
+
+    function terça() {
+        mensagem.innerHTML += "<br>hoje é dia de bife a role";
+    } 
+
+    function quarta() {
+        mensagem.innerHTML += "<br>hoje é dia de feijoada";
+    }
+
+    function quinta() {
+        mensagem.innerHTML += "<br>hoje é dia de macarronada";
+    }
+
+    function sexta() {
+        mensagem.innerHTML += "<br>hoje vai ser só miojinho";
+    }
+
+</script>

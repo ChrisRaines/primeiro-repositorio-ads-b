@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulopolis</title>
+</head>
+<body>
+    <h1>Na cidade Paulopólis a luz custa R$ 0,85 por kWh</h1>
+    Qual a quantidade de kWh consumida no mês
+    <input id="quantidade" type="text" placeholder="Quantidade de Kwh">
+    <br><br>
+    <button onclick="calcular()">Calcular</button>
+    <br><br>
+    <div id="div_msg"></div> 
+
+    
+</body>
+</html>
+
+<script>
+
+    function calcular() {
+        var valor = 0;
+        if (quantidade.value < 100) {
+            valor = Number(quantidade.value) * 0.85 * 0.9;
+        } else {
+            valor = Number(quantidade.value) * 0.85;
+        }
+        alert(valor)
+    }
+
+</script>

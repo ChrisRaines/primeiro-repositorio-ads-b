@@ -1,0 +1,8 @@
+CTRL + D > textos iguais
+
+<link (css)
+
+<ul> lista e <li> coisas da lista
+
+
+https://github.com/miniguiti/site-institucional-ads-b

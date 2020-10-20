@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="estacao">
+        <option value="Escolha uma estação">Escolha</option>
+        <option value="Inverno">Janeiro</option>
+        <option value="Inverno">Fevereiro</option>
+        <option value="Primavera">Março</option>
+        <option value="Primavera">Abril</option>
+        <option value="Primavera">Maio</option>
+        <option value="Verão">Junho</option>
+        <option value="Verão">Julho</option>
+        <option value="Verão">Agosto</option>
+        <option value="Outono">Setembro</option>
+        <option value="Outono">Outubro</option>
+        <option value="Outono">Novembro</option>
+        <option value="Inverno">Dezembro</option>
+    </select>
+    <button onclick="mostrar()">Estações</button><br><br>
+    <div id="mens"></div>
+    <img id="foto" src="" alt="">
+
+    
+</body>
+</html>
+
+    <script>
+        function mostrar() {
+            if (estacao.value == "Inverno") {
+                mens.innerHTML = `${estacao.value}`;
+                foto.src = `inverno.jpg`
+
+                
+            } else if (estacao.value == "Primavera") {
+                mens.innerHTML = `${estacao.value}`;
+                foto.src = `primavera.jpg`
+                foto.style = "width: 500px;"
+        
+                
+            } else if (estacao.value == "Verão") {
+                mens.innerHTML = `${estacao.value}`;
+                foto.src = `verão.jpg`
+                foto.style = "width: 500px;"
+
+
+            } else if (estacao.value == "Outono") {
+                mens.innerHTML = `${estacao.value}`;
+                foto.src = `outono.jpg`
+
+            }
+
+
+
+        }
+
+
+
+    </script>

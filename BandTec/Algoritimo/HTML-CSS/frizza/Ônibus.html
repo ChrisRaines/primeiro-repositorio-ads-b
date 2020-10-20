@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ônibus</title>
+</head>
+<body>
+    <h1 style="color: blueviolet">Vamos calcular seus gastos mensais com passagens de ônibus</u>:</h1>
+    <b style="color: peru;"> valor da passagem:</b>
+    <input id="pri_num" type="text" placeholder="Valor de sua passagem"> <br><br>
+    <b style="color: peru"> Viagens ao mês:</b>
+    <input id="seg_num" type="text" placeholder="Qtd viagens por mês"> <br><br>
+    <button onclick="calcular()">Calcular VT</button>
+    <div id="um"></div>
+</body>
+</html>
+       <script>
+           function calcular() {
+                 um.innerHTML = (`<br>Você vai gastar <u>R$${pri_num.value * seg_num.value}</u> por mês`);
+           }
+           
+       </script>

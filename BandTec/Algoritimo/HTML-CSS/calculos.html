@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Entre com o primeiro número:
+    <input id="pri_num" type="text"> <br><br>
+    Entre com o segundo número:
+    <input id="seg_num" type="text">
+    <br><br>
+    <button onclick="vezes()">Multiplicação</button>
+    <div id="multiplicar"></div>
+  
+</body>
+</html>
+
+<script>
+        function vezes() {
+          multiplicar.innerHTML =  (`<br> O primeiro número multiplicado pelo segundo da: ${Number(pri_num.value) * Number(seg_num.value)}`);
+        }
+
+
+
+</script>
+
+    

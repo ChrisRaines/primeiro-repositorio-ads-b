@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <select id="estacao">
+        <option value="Escolha uma estação">Escolha</option>
+        <option value="Inverno">Janeiro</option>
+        <option value="Inverno">Fevereiro</option>
+        <option value="Primavera">Março</option>
+        <option value="Primavera">Abril</option>
+        <option value="Primavera">Maio</option>
+        <option value="Verão">Junho</option>
+        <option value="Verão">Julho</option>
+        <option value="Verão">Agosto</option>
+        <option value="Outono">Setembro</option>
+        <option value="Outono">Outubro</option>
+        <option value="Outono">Novembro</option>
+        <option value="Inverno">Dezembro</option>
+    </select>
+    <button onclick="mostrar()">Estações</button>
+    <div id="mens"></div>
+    <img id="img" src="" alt="">
+</body>
+</html>
+<script>
+    function mostrar () {
+        if (estacao.value == "Inverno") {
+            mens.innerHTML = `${estacao.value}`;
+            img.src = `frio-extremo.jpg`;
+           
+
+        } else if (estacao.value == "Primavera" ){
+            mens.innerHTML = `${estacao.value}`;
+            img.src = `primavera-a-estacao-da-fertilidade-das-chuvas-e-das-cores-5.jpg`;
+
+        } else if (estacao.value == "Verão") {
+            mens.innerHTML = `${estacao.value}`;
+            img.src = `download.jpg`;
+
+        } else if (estacao.value == "Outono") {
+            mens.innerHTML = `${estacao.value}`;
+            img.src = `1-52.jpg`;
+        }
+            }
+</script>

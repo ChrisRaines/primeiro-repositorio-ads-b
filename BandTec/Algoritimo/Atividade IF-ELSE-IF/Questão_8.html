@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <h1>Você já clicou <b id="b_vezes">0</b> vezes</h1>
+    <button onclick="clique()">Clica neu</button>
+    <div id="mens"></div>
+</body>
+</html>
+    <script>
+            var vezes= 0;
+        function clique() {
+            vezes ++ ;
+            b_vezes.innerHTML = vezes;
+            if (vezes < 5 ) {
+                mens.innerHTML=("Dedo fraquinho, hein")
+            } else {
+                if (vezes >= 5 && vezes <=10) {
+                    mens.innerHTML=("Dedo bom, mano")
+                } else {
+                    if (vezes >= 11 && vezes <= 15) {
+                        mens.innerHTML=("Gosta de clicar, hein!")
+                    } else {
+                        if (vezes > 15) {
+                            mens.innerHTML=("Eita dedo nervoso!")
+                        } else {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    </script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+      
+<body>
+    <h3 id="h3_texto" style="display: block; color: blue;">O que brilha mais que o sol?</h3>
+    <button id="but_acender" style="display: block" onclick="acender()">Acender</button>
+    <button id="but_apagar" style="display: none" onclick="apagar()">Apagar</button>
+    <br><br>
+    <img id="img_acesa" src="chris2.jpg" alt="" style="width: 200px; display: none;">
+    <img id="img_apagada" src="imagens/08179cb3a3331d928f3bf2f1cc3746b6-sol-argentino-oficial-m--o-desenhada-by-vexels.png" alt="" style="width: 200px; display: block;">
+
+    
+</body>
+</html>
+    <script>
+        function acender() {
+            img_apagada.style = "display: none";
+            img_acesa.style = "display: block; width: 200px";
+            but_acender.style = "display: none";
+            but_apagar.style = "display: block";
+            h3_texto.innerHTML = "Eu";
+            
+        } 
+     
+        function apagar() {
+            img_acesa.style = "display: none";
+            img_apagada.style = "display: block; width: 200px";
+            but_apagar.style = "display: none";
+            but_acender.style = "display: block";
+            h3_texto.innerHTML = "O que brilha mais que o sol?";
+        }
+
+    </script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="nota1" placeholder="Entre com a nota 1" type="text"> <br>
+    <input id="nota2" placeholder="Entre com a nota 2" type="text"> <br>
+    <input id="freq" placeholder="Entre com a frequência" type="text"> <br><br>
+    <button onclick="analisar()">Verificar aluno</button>   
+</body>
+</html>
+    <script>
+        function analisar() {
+            var n1 = Number(nota1.value);
+            var n2 = Number(nota2.value);
+            var frequencia = Number(freq.value);
+            media = (n1 + n2) / 2;
+            if (n1 >= 5 && n2 >= 5 && media >= 6 && frequencia > 75) {
+                alert ("aprovado");
+            } else {
+                alert ("reprovado");
+            }
+        }
+
+    </script>

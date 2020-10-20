@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <h3 style="color: darkgreen;">Calculando a média do aluno</h3>
+    <b>Informe sua nota:</b> 
+    <input id="nota" type="text" placeholder="nota do aluno"> <br><br>
+    <button style="background: pink;" onclick="calcular()">Classificar aluno</button> <br><br>
+    <div id="mens"></div>
+    
+</body>
+</html>
+
+    <script>
+        function calcular() {
+            if (nota.value < 5 ) {
+                mens.innerHTML = (`<span style="color: red;">Aluno precia de muita ajuda</span>`);
+            } 
+            else if (nota.value >= 5 &&  nota.value <= 7) {
+                mens.innerHTML = (`<span style="color: orange;">Aluno na média</span>`);
+            }
+            else if (nota.value > 7 && nota.value <= 9.5 ) {
+                mens.innerHTML = (`<span style="color: green;">Aluno acima da média</span>`);
+            }
+            else if (nota.value > 9.5) {
+                mens.innerHTML = (`<span style="color: blue;">Aluno fora da curva</span>`);
+            }
+        }
+
+    </script>

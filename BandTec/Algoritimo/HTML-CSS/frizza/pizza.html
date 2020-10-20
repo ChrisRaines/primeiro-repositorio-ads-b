@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<body>
+    <h1 style="color: darkred">Pizzaria</h1>
+    <h2 style="color: peru">Faça o seu pedido:</h2>
+    <b style="color: darkslateblue;"> Qual o sabor da pizza que deseja?:</b>
+    <input id="pri_num" type="text" placeholder="Sabor da pizza"> <br><br>
+    <b style="color: darkslateblue"> Qual é o preço da pizza?:</b>
+    <input id="seg_num" type="text" placeholder="Valor da pizza"> <br><br>
+    <b style="color: darkslateblue">Qual a quantidade de pessoas que ira comer?:</b>
+    <input id="ter_num" type="text" placeholder="Qtd de pessoas"> <br><br>
+    <button onclick="calcular()">Ver valor por amigo</button>
+    <div id="um"></div>
+</body>
+</html>
+       <script>
+           function calcular() {
+                 um.innerHTML = (`<br>Cada amigo vai colaborar com <u>R$${(seg_num.value / ter_num.value).toFixed(2)}</u> para a pizza de ${pri_num.value}`);
+           }
+           
+       </script>

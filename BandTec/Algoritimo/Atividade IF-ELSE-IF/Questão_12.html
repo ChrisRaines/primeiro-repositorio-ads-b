@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+</head>
+<body>
+    <select id="matinal">
+        <option value="escolha">Escolha</option>
+        <option value="carnivoro">ovos</option>
+        <option value="vegano">leite de arroz</option>
+        <option value="carnivoro">bacon</option>
+    </select>
+    <br>
+    <br>
+    <select id="almoco">
+        <option value="escolha">Escolha</option>
+        <option value="carnivoro">bife</option>
+        <option value="vegano">hamburguer de soja</option>
+        <option value="carnivoro">frango grelhado</option>
+    </select>
+    <br>
+    <br>
+    <select id="jantar">
+        <option value="escolha">Escolha</option>
+        <option value="vegano">picanha de soja</option>
+        <option value="carnivoro">cupim</option>
+        <option value="carnivoro">coração</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="verificar()">Sou Vegano?</button>
+    
+</body>
+</html>
+<script>
+    function verificar() {
+        if (matinal.value == "vegano" && almoco.value == "vegano" && jantar.value == "vegano" ) {
+            alert("Sim, você é vegano!") ;
+        } else {
+            alert("Não, você não é vegano") ;
+        }
+    }
+</script>

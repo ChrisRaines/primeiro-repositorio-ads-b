@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    Insira o tempo de serviço:
+    <br>
+    <input id="anos" type="text" placeholder="Anos">
+    <br>
+    Insira o rendimento de trigo das plantações:
+    <input id="trigo" type="text" placeholder="Kg">
+    <br>
+    Insira os dias não trabalhados(faltas):
+    <input id="faltas" type="text" placeholder="Dias">
+    <br>
+    <button onclick="verificar()">Deu match?</button>
+    <div id="mens"></div>
+    <br>
+    <img id="img" src="" alt="">
+</body>
+</html>
+    <script>
+        function verificar() {
+            var tot_anos = Number(5 - anos.value);
+            if (anos.value >= 5 && trigo.value >= 300 && faltas.value <= 5) {
+                mens.innerHTML = "Minha filha será sua!";
+                img.src = `imagem/cdb5ab07c29b348ea7ee3b9adb5b9d50.jpg`
+            } else {
+                mens.innerHTML = `Deu ruim! Trabalhe mais ${tot_anos} anos`;
+                img.src = `imagem/bravo.jpg`
+            }
+        }
+    </script>

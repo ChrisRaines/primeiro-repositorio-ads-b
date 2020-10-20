@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro2</title>
+</head>
+<body>
+    <h1 style="color: palevioletred">Vamos calcular a sua média</u>:</h1>
+    <b style="color: green;"> Primeiro número:</b>
+    <input id="pri_num" type="text" placeholder="Coloque o primeiro número"> <br><br>
+    <b style="color: green"> Segundo número:</b>
+    <input id="seg_num" type="text" placeholder="Coloque o segundo número"> <br><br>
+    <button onclick="calcular()">Calcular média</button>
+    <div id="um"></div>
+</body>
+</html>
+       <script>
+           function calcular() {
+                 um.innerHTML = (`<br>Sua média foi de: ${(Number(pri_num.value) + Number(seg_num.value))/2}`);
+
+           }
+
+
+       </script>

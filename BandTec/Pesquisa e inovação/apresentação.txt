@@ -1,0 +1,35 @@
+eu irei mostrar e explicar o gráfico de simulador dos sensores
+
+para iniciar nós devemos ter o programa git bash, onde abriremos ele na pasta que esta o arquivo HTML do gráfico juntamente com todas as suas configurações.
+
+para iniciar o gráfico a gente usa o código npm start e abre o arquivo HTML no navegador,
+
+agora para ver o código do gráfico nós devemos abrir nossa parta do grafico no programa vs code,
+
+
+
+
+
+INDEX.HTML - vou começar falando sobre o index.html, no index.html é onde estão as configurações de background do nosso grafico, códigos de estilização do nosso fundo grafico 
+
+
+
+
+CONFIG.JS - agora para o config.js, onde temos as configurações gerais do gráfico, como configurações dos eixos X e Y e ate mesmo as legendas do gráfico, como fonte das letras e tamanhos,
+
+ nessa aba tambem temos a parte de configuração da velocidade de exibição dos dados no gráfico
+
+
+
+
+SENSORS.JS - agora vamos para o sensors.js, o sensors.js é basicamente onde estão os simuladores do gráfico que são esses lm35, trc5000 e ldr, eles estão colocados dentro de um código como funtion e configurados corretamente dentro desse comando
+
+
+
+
+INDEX.JS - o index.js é basicamente como dizem, o nosso teste de mesa, onde nos temos a opção de colocar em prática de uma maneira mais agil e ver se de fato o simulador esta funcionando corretamente
+
+
+
+
+CONTROLLER.JS - o controller.js funciona como uma central de informação, tudo que passa atraves dos sensores e todas as informações e dados obtidos são primeiramente mandado para o controller.js para ser avaliado e falando de uma maneira mais simples entre aspas distribuido

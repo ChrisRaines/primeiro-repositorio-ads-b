@@ -1,0 +1,9 @@
+o requisito é um arquivo vivo que a todo momento esta mudando e se desenvolvendo durante o progresso do trabalho
+
+requisitos são todas as funcionalidades que o cliente pede que tenha no projeto
+
+
+backlog - lista de requisitos
+
+
+Ele disse q funcional era algo q o cliente n precisaria pedir mas vc sabe q tem q ter

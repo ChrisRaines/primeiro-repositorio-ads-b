@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<h1 style="color: blue">Simulando uma compra de mercado</h1>
+
+<body>
+    <b>Valor total</b> (R$):
+    <input id="pri_num" type="text" placeholder="Insira o total da compra"> <br><br>
+    <b>Valor pago</b> (R$):
+    <input id="seg_num" type="text" placeholder="Insira o valor pago">
+    <br><br>
+    <button style="background-color: indianred; border-radius: 50px; margin: 25px" onclick="subtrair()"><b>Subtração</b></button>
+    <div id="um"></div>
+
+
+</body>
+
+</html>
+
+<script>
+    function subtrair() {
+        um.innerHTML = (` <br><b> <span style="color: green;">O seu </span><span style="color: purple;">troco da </span><span style="color: red;">compra é:</span></b> ${(Number(seg_num.value) - Number(pri_num.value)).toFixed(2)}`);
+
+    }
+
+</script>

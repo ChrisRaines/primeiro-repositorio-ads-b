@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <button id="n1" onclick="btn_1()">Nota1</button>
+    <button id="n2" onclick="btn_2()">Nota2</button>
+    <button id="n3" onclick="btn_3()">Nota3</button>
+    <button id="n4" onclick="btn_4()">Nota4</button>
+    <button id="n5" onclick="btn_5()">Nota5</button>
+
+    <h1>Sua Avaliação:</h1>
+    <div id="mens" ></div>
+    <br>
+    <img  id="img" src="" alt="">
+</body>
+</html>
+<script>
+    var ax_n1 = 0;
+    var ax_n2 = 0;
+    var ax_n3 = 0;
+    var ax_n4 = 0;
+    var ax_n5 = 0;
+    var total = 0;
+    function btn_1() {
+         ax_n1 ++;
+         total = (ax_n1 + ax_n2 + ax_n3 + ax_n4 + ax_n5)/5;
+         if (total < 2) {
+            mens.innerHTML = (`${total}`);
+             img.src = `chorão.jpg`;
+             img.style = "width: 500px;"
+         } else if(total >= 2 && total <= 3){
+            mens.innerHTML = (`${total}`);
+            img.src = `neutro.jpg`;
+            img.style = "width: 500px;"
+         } else if (total >3 && total <= 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felicidade.jpg`;
+            img.style = "width: 500px;"
+         } else if(total > 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felizdms.jpg`;
+            img.style = "width: 500px;"
+         }
+    }
+    function btn_2() {
+         ax_n2 ++;
+         total = (ax_n1 + ax_n2 + ax_n3 + ax_n4 + ax_n5)/5;
+         if (total < 2) {
+            mens.innerHTML = (`${total}`);
+             img.src = `chorão.jpg`;
+             img.style = "width: 500px;"
+         } else if(total >= 2 && total <= 3){
+            mens.innerHTML = (`${total}`);
+            img.src = `neutro.jpg`;
+            img.style = "width: 500px;"
+         } else if (total >3 && total <= 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felicidade.jpg`;
+            img.style = "width: 500px;"
+         } else if(total > 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felizdms.jpg`;
+            img.style = "width: 500px;"
+         }
+    }
+    function btn_3() {
+         ax_n3 ++;
+         total = (ax_n1 + ax_n2 + ax_n3 + ax_n4 + ax_n5)/5;
+         if (total < 2) {
+            mens.innerHTML = (`${total}`);
+             img.src = `chorão.jpg`;
+             img.style = "width: 500px;"
+         } else if(total >= 2 && total <= 3){
+            mens.innerHTML = (`${total}`);
+            img.src = `neutro.jpg`;
+            img.style = "width: 500px;"
+         } else if (total >3 && total <= 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felicidade.jpg`;
+            img.style = "width: 500px;"
+         } else if(total > 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felizdms.jpg`;
+            img.style = "width: 500px;"
+         }
+    }
+    function btn_4() {
+         ax_n4 ++;
+         total = (ax_n1 + ax_n2 + ax_n3 + ax_n4 + ax_n5)/5;
+         if (total < 2) {
+            mens.innerHTML = (`${total}`);
+             img.src = `chorão.jpg`;
+             img.style = "width: 500px;"
+         } else if(total >= 2 && total <= 3){
+            mens.innerHTML = (`${total}`);
+            img.src = `neutro.jpg`;
+            img.style = "width: 500px;"
+         } else if (total >3 && total <= 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felicidade.jpg`;
+            img.style = "width: 500px;"
+         } else if(total > 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felizdms.jpg`;
+            img.style = "width: 500px;"
+         }
+    }
+    function btn_5() {
+         ax_n5 ++;
+         total = (ax_n1 + ax_n2 + ax_n3 + ax_n4 + ax_n5)/5;
+         if (total < 2) {
+            mens.innerHTML = (`${total}`);
+             img.src = `chorão.jpg`;
+             img.style = "width: 500px;"
+         } else if(total >= 2 && total <= 3){
+            mens.innerHTML = (`${total}`);
+            img.src = `neutro.jpg`;
+            img.style = "width: 500px;"
+         } else if (total >3 && total <= 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felicidade.jpg`;
+            img.style = "width: 500px;"
+         } else if(total > 4.5) {
+            mens.innerHTML = (`${total}`);
+            img.src = `felizdms.jpg`;
+            img.style = "width: 500px;"
+         }
+    }
+    
+</script>
